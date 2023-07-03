@@ -1,0 +1,52 @@
+{
+  "name": "performance",
+  "utterances": {
+    "en": [
+      "SIow after login",
+      "Performance problem",
+      "Taking lots of time to launch",
+      "loading slowly",
+      "very slow",
+      "Taking much time",
+      "Pe﻿rformance not good",
+      "T﻿aking time",
+      "T﻿aking a lot time",
+      "performance",
+      "n﻿ot good performance",
+      "time taken is a lot",
+      "s﻿low performance",
+      "s﻿low",
+      "m﻿ore time taken",
+      "T﻿ime consuming",
+      "M﻿achine is slow",
+      "Sl﻿ow machine",
+      "n﻿ot fast",
+      "teamcenter is slow",
+      "T﻿eamcenter is taking time",
+      "T﻿eamcenter bad performance",
+      "T﻿eamcenter is taking time a lot"
+    ]
+  },
+  "slots": [
+    {
+      "id": "JXUNlb01xHIQ9hzAuCwTa",
+      "name": "slow",
+      "entities": [
+        "any"
+      ],
+      "color": 1
+    },
+    {
+      "id": "xyissbnspe06bBwcMPh07",
+      "name": "Time",
+      "entities": [
+        "time",
+        "duration"
+      ],
+      "color": 2
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

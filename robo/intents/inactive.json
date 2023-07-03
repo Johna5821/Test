@@ -1,0 +1,21 @@
+{
+  "name": "inactive",
+  "utterances": {
+    "en": [
+      "T﻿he specified user is inactive",
+      "T﻿he specifies user is inactive",
+      "Login inactive",
+      "N﻿ot logged in for long",
+      "User not active",
+      "User isn't active",
+      "U﻿ser is not active",
+      "P﻿lease check active status",
+      "a﻿ctivate my user",
+      "a﻿ctivate my userid"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

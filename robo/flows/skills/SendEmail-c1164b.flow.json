@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "fromAddress": "johnadom5821@gmail.com",
+    "toAddress": "{{temp.emailId}}",
+    "subjectElement": "builtin_text-UDf6wK",
+    "contentElement": "builtin_text-IJhOci"
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "basic-skills/send_email {\"fromAddress\":\"johnadom5821@gmail.com\",\"toAddress\":\"{{temp.emailId}}\",\"subjectElement\":\"builtin_text-UDf6wK\",\"contentElement\":\"builtin_text-IJhOci\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "445276"
+    }
+  ]
+}

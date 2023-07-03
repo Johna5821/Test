@@ -1,0 +1,43 @@
+{
+  "name": "log-in",
+  "utterances": {
+    "en": [
+      "Un﻿able to Login.",
+      "L﻿ogin Error.",
+      "Incorrect Login.",
+      "I﻿nvalid Credentials.",
+      "cannot login.",
+      "login was unsuccessful.",
+      "I﻿nvalid Credentials.",
+      "login not successful.",
+      "Expired login.",
+      "login has been canceled.",
+      "Teamcenter does not allow me to attempt a login.",
+      "login attempt failed.",
+      "Not able to login.",
+      "Not allowing to Login to Teamcenter.",
+      "L﻿ogin not allowed",
+      "C﻿an't Login",
+      "L﻿ogin Issues",
+      "P﻿roblem with login",
+      "P﻿roblem in login",
+      "Issue with login",
+      "Lo﻿gin",
+      "i﻿nvalid"
+    ]
+  },
+  "slots": [
+    {
+      "id": "mVtKQf1qXKnlhTMpvGEY2",
+      "name": "Creds",
+      "entities": [
+        "any",
+        "email"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cad",
+  "utterances": {
+    "en": [
+      "Having issue while svaing cad data"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

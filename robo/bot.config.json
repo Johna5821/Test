@@ -1,0 +1,57 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {
+    "website": "http://inbr4lpt-977811:3000/botpress",
+    "phoneNumber": "1234567890",
+    "emailAddress": "plm@plm.com",
+    "termsConditions": "https://www.tatatechnologies.com",
+    "privacyPolicy": "https://www.tatatechnologies.com",
+    "avatarUrl": "/api/v1/bots/robo/media/sgxchgq6pc5effh5p6rk-Plm4.JPG",
+    "coverPictureUrl": "/api/v1/bots/robo/media/n4ybyrbci5d4plkfxylp-plm.JPG"
+  },
+  "$schema": "../../bot.config.schema.json",
+  "description": "",
+  "active": true,
+  "version": "12.30.2",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_audio",
+      "builtin_card",
+      "builtin_carousel",
+      "dropdown",
+      "builtin_file",
+      "builtin_image",
+      "builtin_location",
+      "builtin_single-choice",
+      "builtin_text",
+      "builtin_video"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "robo",
+  "name": "PLM Digital Assistant ",
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2022-10-18T07:04:08.710Z",
+      "promoted_by": "system"
+    }
+  }
+}

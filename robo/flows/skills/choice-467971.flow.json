@@ -1,0 +1,116 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "pxm0e6fpqx",
+    "contentId": "builtin_single-choice-5eE7_z",
+    "invalidContentId": "",
+    "keywords": {
+      "submit": [
+        "submit",
+        "How to submit to a workflow"
+      ],
+      "approve": [
+        "approve",
+        "How to approve/reject"
+      ],
+      "demote": [
+        "demote",
+        "How to demote/promote"
+      ],
+      "delegate": [
+        "delegate",
+        "How to delegate"
+      ],
+      "complete": [
+        "complete",
+        "How to complete a task"
+      ],
+      "view": [
+        "view",
+        "How to view a task"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-pxm0e6fpqx\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-pxm0e6fpqx\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-pxm0e6fpqx\",\"value\": null}",
+        "say #!builtin_single-choice-5eE7_z {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "809254"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"pxm0e6fpqx\",\"contentId\":\"builtin_single-choice-5eE7_z\",\"invalidContentId\":\"\",\"keywords\":{\"submit\":[\"submit\",\"How to submit to a workflow\"],\"approve\":[\"approve\",\"How to approve/reject\"],\"demote\":[\"demote\",\"How to demote/promote\"],\"delegate\":[\"delegate\",\"How to delegate\"],\"complete\":[\"complete\",\"How to complete a task\"],\"view\":[\"view\",\"How to view a task\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-pxm0e6fpqx'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "079796"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"pxm0e6fpqx\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-pxm0e6fpqx']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "949602"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "695286"
+    }
+  ]
+}

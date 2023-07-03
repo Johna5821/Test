@@ -1,0 +1,129 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "8dcc64cc73",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "Ask-Error"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "d31dee11dd",
+      "name": "Ask-Error",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'performance'",
+          "conditionType": "intent",
+          "node": "manage-slowness"
+        },
+        {
+          "condition": "event.nlu.intent.name === 'log-in'",
+          "conditionType": "intent",
+          "node": "choice-0d43af"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Jira.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-_YYsED"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "4ed6735d40",
+      "name": "manage-slowness",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-447cf4"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ngs06f",
+        "say #!builtin_text-1wsz4e"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-447cf4",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-447cf4",
+      "flow": "skills/choice-447cf4.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-25euwfof0m'] == \"yes\"",
+          "node": "close"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-25euwfof0m'] == \"no\"",
+          "conditionType": "raw",
+          "node": "Jira.flow.json"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "33e3d43ac7",
+      "name": "close",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JZHeal"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-0d43af",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-0d43af",
+      "flow": "skills/choice-0d43af.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Error w...]",
+          "condition": "temp['skill-choice-ret-9yw2for9bw'] == \"Error while logging in\"",
+          "conditionType": "raw",
+          "node": "Log-in.flow.json"
+        },
+        {
+          "caption": "User picked [Need to...]",
+          "condition": "temp['skill-choice-ret-9yw2for9bw'] == \"Need to reset my password\"",
+          "conditionType": "raw",
+          "node": "Reset-Password.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

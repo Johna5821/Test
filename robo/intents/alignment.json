@@ -1,0 +1,26 @@
+{
+  "name": "alignment",
+  "utterances": {
+    "en": [
+      "Te﻿amcenter is having alignment issue.",
+      "Al﻿ignment ineffectual.",
+      "Ca﻿nnot complete the alignment.",
+      "Al﻿ignment Failed.",
+      "Fi﻿xed misalignment error.",
+      "A﻿lignment Issue.",
+      "Alignment Error.",
+      "I﻿ssue  with alignment.",
+      "A﻿uthorization misalignments.",
+      "T﻿rying to fix misallignment error.",
+      "Unable to get a clean report/TC Alignment.",
+      "unable to get a clean report and unable to do TeamCenter alignment.",
+      "can't do the TC alignment.",
+      "kindly help me to do the EBOM to TCE alignment.",
+      "The alignment window is not showing all parts."
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

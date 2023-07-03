@@ -1,0 +1,471 @@
+[
+  {
+    "id": "builtin_text-Ao_3E4",
+    "formData": {
+      "text$en": "Hi! I am PLM Digital Assistant, all set to help you",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T16:40:08.544Z",
+    "modifiedOn": "2022-12-05T08:45:42.163Z"
+  },
+  {
+    "id": "builtin_text-Xk1H2R",
+    "formData": {
+      "text$en": "{{{temp.customUrl}}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T18:07:34.291Z",
+    "modifiedOn": "2022-10-12T10:20:49.968Z"
+  },
+  {
+    "id": "builtin_text-CbqxrR",
+    "formData": {
+      "text$en": "Thats not a problem at all , Please refer to document available at the link below <br> [Click me]({{{temp.customUrl}}}) inline link",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-12T10:09:15.341Z",
+    "modifiedOn": "2022-10-15T13:41:29.312Z"
+  },
+  {
+    "id": "builtin_text-N2vFfL",
+    "formData": {
+      "text$en": "Glad to hear that. Have a nice day.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T13:46:16.587Z",
+    "modifiedOn": "2022-10-15T13:46:16.587Z"
+  },
+  {
+    "id": "builtin_text-KaE9Go",
+    "formData": {
+      "text$en": "I am sorry to hear that. Dont worry I am raising a ticket and the documentation team would get it touch with you so that the necessary updates can be made ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T13:49:59.403Z",
+    "modifiedOn": "2022-10-15T13:49:59.403Z"
+  },
+  {
+    "id": "builtin_text-B9WHOW",
+    "formData": {
+      "text$en": "I ll need some basic information from you.\nPlease enter your uer Id",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:38:30.811Z",
+    "modifiedOn": "2022-10-15T15:05:40.934Z"
+  },
+  {
+    "id": "builtin_text-Rq2W_b",
+    "formData": {
+      "text$en": "Please enter you userId",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:45:03.875Z",
+    "modifiedOn": "2022-10-15T14:45:03.875Z"
+  },
+  {
+    "id": "builtin_text-tMsygG",
+    "formData": {
+      "text$en": "Thank you !",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:49:29.455Z",
+    "modifiedOn": "2022-10-15T14:49:29.455Z"
+  },
+  {
+    "id": "builtin_text-cxsukK",
+    "formData": {
+      "text$en": "Oops ! that doesnt seem right",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:53:52.186Z",
+    "modifiedOn": "2022-10-15T14:53:52.186Z"
+  },
+  {
+    "id": "builtin_text-4IhtZM",
+    "formData": {
+      "text$en": "Please let me know the issue with the documentation",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:55:20.051Z",
+    "modifiedOn": "2022-10-15T14:55:20.051Z"
+  },
+  {
+    "id": "builtin_text-6O3oBs",
+    "formData": {
+      "text$en": "Thank you once again !",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T14:59:15.917Z",
+    "modifiedOn": "2022-10-15T14:59:15.917Z"
+  },
+  {
+    "id": "builtin_text-dLuaE0",
+    "formData": {
+      "text$en": "Creating a ticket .Please wait ...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T15:00:52.890Z",
+    "modifiedOn": "2022-10-15T17:03:21.412Z"
+  },
+  {
+    "id": "builtin_text-_YYsED",
+    "formData": {
+      "text$en": "Can you please elaborate the problem",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": [
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T17:35:58.659Z",
+    "modifiedOn": "2022-11-14T11:41:47.760Z"
+  },
+  {
+    "id": "builtin_text-ngs06f",
+    "formData": {
+      "text$en": "Lets try clearing you cache. Please follow the below steps.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-16T12:26:34.268Z",
+    "modifiedOn": "2022-10-16T12:26:34.268Z"
+  },
+  {
+    "id": "builtin_text-1wsz4e",
+    "formData": {
+      "text$en": "- Close all Teamcenter applications\n- Press Ctrl + R\n- Type %TEMP% and hit enter\n- Select all the files listed in screen that has opened and deleted them\n- Open Teamcenter and check if the performance has improved",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-16T12:31:42.305Z",
+    "modifiedOn": "2022-10-16T12:31:42.305Z"
+  },
+  {
+    "id": "builtin_text-JZHeal",
+    "formData": {
+      "text$en": "Great ! Good to know I was of help. Have a nice day",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-16T12:58:57.386Z",
+    "modifiedOn": "2022-10-16T12:58:57.386Z"
+  },
+  {
+    "id": "builtin_text-7NeoKR",
+    "formData": {
+      "text$en": "I ll need some basic information from you.\nPlease enter your user Id",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:06:19.900Z",
+    "modifiedOn": "2022-11-29T08:42:24.681Z"
+  },
+  {
+    "id": "builtin_text-7vLRSX",
+    "formData": {
+      "text$en": "Oops ! that doesn't seem right",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:12:53.096Z",
+    "modifiedOn": "2022-10-20T11:12:53.096Z"
+  },
+  {
+    "id": "builtin_text-U6QCKf",
+    "formData": {
+      "text$en": "Please let me know the issue with the documentation",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:20:51.561Z",
+    "modifiedOn": "2022-10-20T11:20:51.561Z"
+  },
+  {
+    "id": "builtin_text-pgKM0C",
+    "formData": {
+      "text$en": "Thank you once again !",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:24:22.731Z",
+    "modifiedOn": "2022-10-20T11:24:22.731Z"
+  },
+  {
+    "id": "builtin_text-B0rBaW",
+    "formData": {
+      "text$en": "Creating a ticket .Please wait ...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:24:49.430Z",
+    "modifiedOn": "2022-11-29T07:13:50.068Z"
+  },
+  {
+    "id": "builtin_text-MmJ90j",
+    "formData": {
+      "text$en": "I'm sorry, I couldn't get this.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-07T10:52:56.222Z",
+    "modifiedOn": "2022-11-07T10:52:56.222Z"
+  },
+  {
+    "id": "builtin_text-8MMZE0",
+    "formData": {
+      "text$en": "Megha is broadcasting",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-22T07:18:01.736Z",
+    "modifiedOn": "2022-11-22T07:18:01.736Z"
+  },
+  {
+    "id": "builtin_text-seBaV9",
+    "formData": {
+      "text$en": "Have you been able to login successfully in less than 30 days?",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-28T06:45:26.745Z",
+    "modifiedOn": "2022-11-29T04:37:05.243Z"
+  },
+  {
+    "id": "builtin_text-dM-EFm",
+    "formData": {
+      "text$en": "Your ID must be deactivated, Please contact your admin.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-28T06:54:51.200Z",
+    "modifiedOn": "2022-11-29T09:07:53.173Z"
+  },
+  {
+    "id": "builtin_text-EYCLma",
+    "formData": {
+      "text$en": "Looks like you have forgotten your password, should I reset?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T04:25:45.004Z",
+    "modifiedOn": "2022-11-29T04:35:11.152Z"
+  },
+  {
+    "id": "builtin_text-WIvLU5",
+    "formData": {
+      "text$en": "Let me try to reset your password",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T04:48:09.175Z",
+    "modifiedOn": "2022-11-29T04:50:49.120Z"
+  },
+  {
+    "id": "builtin_text-n9tDDD",
+    "formData": {
+      "text$en": "\"Please provide your E-mail Id.\"",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T08:45:08.302Z",
+    "modifiedOn": "2022-12-02T05:10:37.882Z"
+  },
+  {
+    "id": "builtin_text-ggjWFY",
+    "formData": {
+      "text$en": "This happens when the servers are either down or not reachable, Please raise a ticket with the snapshot of this error.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:49:21.069Z",
+    "modifiedOn": "2022-11-29T09:49:21.069Z"
+  },
+  {
+    "id": "builtin_text-5tLUYS",
+    "formData": {
+      "text$en": "Please retry login using right username and password",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:51:20.235Z",
+    "modifiedOn": "2022-11-29T09:51:20.235Z"
+  },
+  {
+    "id": "builtin_text-5mmSoZ",
+    "formData": {
+      "text$en": "Looks like you have forgotten your password, please raise a ticket to reset it",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:55:18.776Z",
+    "modifiedOn": "2022-11-29T09:55:18.776Z"
+  },
+  {
+    "id": "builtin_text-yEEpDJ",
+    "formData": {
+      "text$en": "Your user Id has been deactivated kindly raise a ticket for re-activation.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:57:07.594Z",
+    "modifiedOn": "2022-11-29T09:57:07.594Z"
+  },
+  {
+    "id": "builtin_text-uiExKS",
+    "formData": {
+      "text$en": "Sorry!! Currently I don't have a solution for this. Please raise a ticket with screenshot of the error",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T10:42:23.113Z",
+    "modifiedOn": "2022-11-29T10:42:23.113Z"
+  },
+  {
+    "id": "builtin_text-D-aQm8",
+    "formData": {
+      "text$en": "Test",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T04:50:54.975Z",
+    "modifiedOn": "2022-12-02T04:50:54.975Z"
+  },
+  {
+    "id": "builtin_text--jTT0W",
+    "formData": {
+      "text$en": "Test",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T04:51:04.808Z",
+    "modifiedOn": "2022-12-02T04:51:04.808Z"
+  },
+  {
+    "id": "builtin_text-eNcW-o",
+    "formData": {
+      "text$en": "Template for process related query",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T05:14:22.576Z",
+    "modifiedOn": "2022-12-02T05:14:22.576Z"
+  },
+  {
+    "id": "builtin_text-uJ_3BZ",
+    "formData": {
+      "text$en": "Please find the template",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T05:19:20.112Z",
+    "modifiedOn": "2022-12-02T05:19:20.112Z"
+  },
+  {
+    "id": "builtin_text-VtKIt7",
+    "formData": {
+      "text$en": "Process related template",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T05:23:59.711Z",
+    "modifiedOn": "2022-12-02T05:23:59.711Z"
+  },
+  {
+    "id": "builtin_text-EXaJCp",
+    "formData": {
+      "text$en": "Please enter your email-id",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T05:55:54.570Z",
+    "modifiedOn": "2022-12-02T05:55:54.570Z"
+  },
+  {
+    "id": "builtin_text-EQQIi4",
+    "formData": {
+      "text$en": "Sending email to {{temp.emailId}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T05:59:19.283Z",
+    "modifiedOn": "2022-12-02T05:59:19.283Z"
+  },
+  {
+    "id": "builtin_text-UDf6wK",
+    "formData": {
+      "text$en": "Process related template",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T06:00:43.485Z",
+    "modifiedOn": "2022-12-02T06:00:43.485Z"
+  },
+  {
+    "id": "builtin_text-IJhOci",
+    "formData": {
+      "text$en": "Please select the below link to see the template",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T06:01:51.366Z",
+    "modifiedOn": "2022-12-02T06:01:51.366Z"
+  }
+]

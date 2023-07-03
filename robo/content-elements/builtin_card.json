@@ -1,0 +1,20 @@
+[
+  {
+    "id": "builtin_card-fTV-dp",
+    "formData": {
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "{{{temp.customUrl}}}",
+          "title": "Workflow submission"
+        }
+      ],
+      "title$en": "Help at hand",
+      "subtitle$en": "Workflow submission in Teamcenter",
+      "image$en": "/api/v1/bots/robo/media/uieju2uscgqxa39xvyaw-bot.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-12T10:40:06.299Z",
+    "modifiedOn": "2022-10-12T10:53:06.866Z"
+  }
+]

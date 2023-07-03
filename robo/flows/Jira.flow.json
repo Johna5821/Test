@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "Jira-Ticket",
+  "description": "",
+  "nodes": [
+    {
+      "id": "38800b5eaf",
+      "name": "Jira-Ticket",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "capture_input"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3f7ae07c09",
+      "name": "capture_input",
+      "next": [
+        {
+          "condition": "event.preview.length>0",
+          "conditionType": "raw",
+          "node": "set-userid"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "error-userid"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-7NeoKR"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cd4c1eaf27",
+      "name": "set-userid",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Capture-comment"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"session\",\"name\":\"userid\",\"value\":\"{{event.preview}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "ad0907e14a",
+      "name": "error-userid",
+      "next": [
+        {
+          "condition": "true",
+          "node": "capture_input"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-7vLRSX"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0aca376acc",
+      "name": "Capture-comment",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Raise-Ticket"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-U6QCKf"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"session\",\"name\":\"comments\",\"value\":\"{{event.preview}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "a41ecbcc80",
+      "name": "Raise-Ticket",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-pgKM0C",
+        "say #!builtin_text-B0rBaW",
+        "createJira {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MainMenu"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Ao_3E4"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-6de33e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MainMenu",
+      "flow": "skills/choice-6de33e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [query]",
+          "condition": "temp['skill-choice-ret-0qb77sm4vw'] == \"query\"",
+          "node": "Query.flow.json"
+        },
+        {
+          "caption": "User picked [issue]",
+          "condition": "temp['skill-choice-ret-0qb77sm4vw'] == \"issue\"",
+          "node": "Issue.flow.json"
+        },
+        {
+          "caption": "User picked [informa...]",
+          "condition": "temp['skill-choice-ret-0qb77sm4vw'] == \"information\"",
+          "node": "Information.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "error.flow.json"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "48be74c5d2",
+      "name": "getdynamic-url",
+      "next": [
+        {
+          "condition": "temp.customUrl   !== null",
+          "conditionType": "props",
+          "node": "Display-url"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "error.flow.json"
+        }
+      ],
+      "onEnter": [
+        "getUrl {\"mappedValue\":\"submit\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cc62644393",
+      "name": "Display-url",
+      "next": [
+        {
+          "condition": "true",
+          "node": "doc-satisfaction"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-CbqxrR"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-3e94a2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "doc-satisfaction",
+      "flow": "skills/choice-3e94a2.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-hfn3zy9wob'] == \"Yes\"",
+          "node": "doc-perfect"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-hfn3zy9wob'] == \"No\"",
+          "node": "UpdateDoc-Ticket"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "failure-msg"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "d1f2e54ee0",
+      "name": "doc-perfect",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-N2vFfL"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cf9fbc816d",
+      "name": "UpdateDoc-Ticket",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Jira.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-KaE9Go"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f628a1b26b",
+      "name": "failure-msg",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-MmJ90j"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

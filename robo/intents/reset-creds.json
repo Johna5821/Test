@@ -1,0 +1,22 @@
+{
+  "name": "reset-creds",
+  "utterances": {
+    "en": [
+      "C﻿hange my password",
+      "Reset my password",
+      "D﻿efault password",
+      "R﻿eset to default password",
+      "M﻿ake my password default",
+      "F﻿orgot password",
+      "C﻿annot remember password",
+      "Tell me my password",
+      "R﻿e-set password",
+      "M﻿odify password to default",
+      "Don't know password"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "6ea7ebfb9b",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-694351"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-694351",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-694351",
+      "flow": "skills/choice-694351.flow.json",
+      "next": [
+        {
+          "caption": "User picked [search]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"search\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [edit]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"edit\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [change]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"change\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [check a...]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"check access\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [attach]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"attach\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [view]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"view\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [visuali...]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"visualize\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [create]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"create\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [revise]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"revise\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "User picked [delete]",
+          "condition": "temp['skill-choice-ret-t6cgyezw55'] == \"delete\"",
+          "node": "getpart-url"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "Jira.flow.json"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "02c31aa3ca",
+      "name": "getpart-url",
+      "next": [
+        {
+          "condition": "temp.customUrl    !==null",
+          "conditionType": "props",
+          "node": "main.flow.json#Display-url"
+        },
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "getUrl {\"mappedValue\":\"{{event.payload.payload}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

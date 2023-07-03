@@ -1,0 +1,203 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "ae77286a4a",
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_text-seBaV9"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "choice-267687"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "6ca9fc9cca",
+      "name": "node-de40",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yEEpDJ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-267687",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-267687",
+      "flow": "skills/choice-267687.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-05n2zwe1ta'] == \"Yes\"",
+          "node": "choice-be0b3f"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-05n2zwe1ta'] == \"No\"",
+          "node": "node-de40"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-be0b3f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-be0b3f",
+      "flow": "skills/choice-be0b3f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [No serv...]",
+          "condition": "temp['skill-choice-ret-p24nzbm7l8'] == \"No server available\"",
+          "node": "No-server-available"
+        },
+        {
+          "caption": "User picked [Invalid...]",
+          "condition": "temp['skill-choice-ret-p24nzbm7l8'] == \"Invalid Credentials\"",
+          "node": "check-credentials"
+        },
+        {
+          "caption": "User picked [Inactive]",
+          "condition": "temp['skill-choice-ret-p24nzbm7l8'] == \"Inactive\"",
+          "node": "Activate-user"
+        },
+        {
+          "caption": "User picked [Other]",
+          "condition": "temp['skill-choice-ret-p24nzbm7l8'] == \"Other\"",
+          "node": "Other"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6c2f6c893e",
+      "name": "No-server-available",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ggjWFY"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "66bfeeb402",
+      "name": "check-credentials",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-767e90"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5tLUYS"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "54bc167112",
+      "name": "Activate-user",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-yEEpDJ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-767e90",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-767e90",
+      "flow": "skills/choice-767e90.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-ncs900hk5d'] == \"yes\"",
+          "conditionType": "raw",
+          "node": "main.flow.json#doc-perfect"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-ncs900hk5d'] == \"no\"",
+          "node": "node-6466"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "1971f87a5b",
+      "name": "node-6466",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-5mmSoZ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "81e106d9cb",
+      "name": "Other",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uiExKS"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

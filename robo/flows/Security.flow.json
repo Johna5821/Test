@@ -1,0 +1,69 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "6c9b0f70a0",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-d3ce5d"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-d3ce5d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-d3ce5d",
+      "flow": "skills/choice-d3ce5d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Find_Ac...]",
+          "condition": "temp['skill-choice-ret-lhpviq2kja'] == \"Find_Access\"",
+          "node": "getfaccess-url"
+        },
+        {
+          "caption": "User picked [Go Back]",
+          "condition": "temp['skill-choice-ret-lhpviq2kja'] == \"Go Back\"",
+          "conditionType": "raw",
+          "node": "main.flow.json#choice-c7133f"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "main.flow.json#failure-msg"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "d3339a28cc",
+      "name": "getfaccess-url",
+      "next": [
+        {
+          "condition": "temp.customUrl   !==null",
+          "conditionType": "props",
+          "node": "main.flow.json#Display-url"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "main.flow.json#failure-msg"
+        }
+      ],
+      "onEnter": [
+        "getUrl {\"mappedValue\":\"{{event.payload.payload}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

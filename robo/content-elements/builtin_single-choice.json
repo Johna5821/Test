@@ -1,0 +1,481 @@
+[
+  {
+    "id": "builtin_single-choice-epsrWr",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "I have a Query",
+          "value": "query"
+        },
+        {
+          "title": "I am facing an Issue",
+          "value": "issue"
+        },
+        {
+          "title": "I need some Information",
+          "value": "information"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Please select one of the options"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T16:42:34.883Z",
+    "modifiedOn": "2022-11-29T05:37:23.367Z"
+  },
+  {
+    "id": "builtin_single-choice-QJKUmc",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Workflow related",
+          "value": "workflow"
+        },
+        {
+          "title": "Part/Design related",
+          "value": "part"
+        },
+        {
+          "title": "Security related",
+          "value": "security"
+        },
+        {
+          "title": "Process related",
+          "value": "process"
+        },
+        {
+          "title": "Go Back",
+          "value": "Go Back"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Select a category"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T16:48:31.534Z",
+    "modifiedOn": "2022-12-06T06:02:53.672Z"
+  },
+  {
+    "id": "builtin_single-choice-5eE7_z",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to submit to a workflow",
+          "value": "submit"
+        },
+        {
+          "title": "How to approve/reject",
+          "value": "approve"
+        },
+        {
+          "title": "How to demote/promote",
+          "value": "demote"
+        },
+        {
+          "title": "How to delegate",
+          "value": "delegate"
+        },
+        {
+          "title": "How to complete a task",
+          "value": "complete"
+        },
+        {
+          "title": "How to view a task",
+          "value": "view"
+        },
+        {
+          "title": "Go Back",
+          "value": "Go Back"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Which of the below action you need to know"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T16:53:04.072Z",
+    "modifiedOn": "2022-12-06T06:03:18.725Z"
+  },
+  {
+    "id": "builtin_single-choice-bKa3-C",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Did the content of the document resolve your query"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-15T13:45:02.325Z",
+    "modifiedOn": "2022-10-15T13:45:02.325Z"
+  },
+  {
+    "id": "builtin_single-choice-D9Yqz7",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "yes"
+        },
+        {
+          "title": "No",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Did it resolve the problem?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-16T12:57:57.583Z",
+    "modifiedOn": "2022-11-17T05:55:51.359Z"
+  },
+  {
+    "id": "builtin_single-choice-1vzzxL",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to search for a part or design",
+          "value": "Search"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Which of the below action you need to know"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T08:40:22.328Z",
+    "modifiedOn": "2022-11-04T08:40:22.328Z"
+  },
+  {
+    "id": "builtin_single-choice-pqeT-_",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to search for a part or design",
+          "value": "Search"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Which action below you need to know"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T08:43:49.392Z",
+    "modifiedOn": "2022-11-04T08:43:49.392Z"
+  },
+  {
+    "id": "builtin_single-choice-GFRqoO",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to search for a part or design",
+          "value": "search"
+        },
+        {
+          "title": "How to edit properties",
+          "value": "edit"
+        },
+        {
+          "title": "How to change ownership",
+          "value": "change"
+        },
+        {
+          "title": "How to check for my access",
+          "value": "check access"
+        },
+        {
+          "title": "How to attach a document",
+          "value": "attach"
+        },
+        {
+          "title": "How to view attachments and linkages",
+          "value": "view"
+        },
+        {
+          "title": "How to visualize",
+          "value": "visualize"
+        },
+        {
+          "title": "How create a similar part",
+          "value": "create"
+        },
+        {
+          "title": "How to revise",
+          "value": "revise"
+        },
+        {
+          "title": "How to delete",
+          "value": "delete"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Please select one of the following!"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T08:49:30.151Z",
+    "modifiedOn": "2022-11-29T08:35:38.867Z"
+  },
+  {
+    "id": "builtin_single-choice-A18WSU",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to find my access",
+          "value": "Find_Access"
+        },
+        {
+          "title": "Go Back",
+          "value": "Go Back"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Please hit the option below"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T09:26:14.717Z",
+    "modifiedOn": "2022-12-06T06:08:00.158Z"
+  },
+  {
+    "id": "builtin_single-choice-0G7lD1",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "How to apply for access",
+          "value": "access"
+        },
+        {
+          "title": " How to apply for membership to a group/role",
+          "value": "membership"
+        },
+        {
+          "title": "How to activate my user id",
+          "value": "activate"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Select the process"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T10:03:42.294Z",
+    "modifiedOn": "2022-11-04T11:17:55.402Z"
+  },
+  {
+    "id": "builtin_single-choice-moB8R7",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Error while logging in",
+          "value": "Error while logging in"
+        },
+        {
+          "title": "Need to reset my password",
+          "value": "Need to reset my password"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Please tell me which login problem you are facing "
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-28T06:46:58.664Z",
+    "modifiedOn": "2022-11-29T08:53:56.143Z"
+  },
+  {
+    "id": "builtin_single-choice-8DBNSg",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-28T08:09:59.521Z",
+    "modifiedOn": "2022-11-28T08:09:59.521Z"
+  },
+  {
+    "id": "builtin_single-choice-7jlWmO",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T04:26:41.860Z",
+    "modifiedOn": "2022-11-29T04:26:41.860Z"
+  },
+  {
+    "id": "builtin_single-choice-v6jnlm",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "No server available",
+          "value": "No server available"
+        },
+        {
+          "title": "Invalid Credentials",
+          "value": "Invalid Credentials"
+        },
+        {
+          "title": "The specified user is inactive.",
+          "value": "Inactive"
+        },
+        {
+          "title": "Other",
+          "value": "Other"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Which of the following error message you can see on your screen?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:18:15.016Z",
+    "modifiedOn": "2022-11-29T09:38:15.870Z"
+  },
+  {
+    "id": "builtin_single-choice-i1Pbgh",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "yes"
+        },
+        {
+          "title": "No",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Does it solved your problem"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-29T09:52:59.304Z",
+    "modifiedOn": "2022-11-29T09:52:59.304Z"
+  },
+  {
+    "id": "builtin_single-choice-dhz2Nl",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "yes"
+        },
+        {
+          "title": "No",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Did you find the template attached in the email?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-02T06:57:06.795Z",
+    "modifiedOn": "2022-12-02T06:57:06.795Z"
+  },
+  {
+    "id": "builtin_single-choice-TyeHN4",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Did you find it helpful?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-06T04:22:44.597Z",
+    "modifiedOn": "2022-12-06T04:22:44.597Z"
+  },
+  {
+    "id": "builtin_single-choice-R0BatH",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Go Back",
+          "value": "Go Back"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-06T06:02:22.902Z",
+    "modifiedOn": "2022-12-06T06:02:22.902Z"
+  }
+]

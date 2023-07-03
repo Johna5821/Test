@@ -1,0 +1,182 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "4164a9f5a9",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "captureEmail"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-fcace0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-fcace0",
+      "flow": "skills/choice-fcace0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [access]",
+          "condition": "temp['skill-choice-ret-y91jhby10g'] == \"access\"",
+          "node": "geturl"
+        },
+        {
+          "caption": "User picked [members...]",
+          "condition": "temp['skill-choice-ret-y91jhby10g'] == \"membership\"",
+          "conditionType": "raw",
+          "node": "geturl"
+        },
+        {
+          "caption": "User picked [activate]",
+          "condition": "temp['skill-choice-ret-y91jhby10g'] == \"activate\"",
+          "conditionType": "raw",
+          "node": "geturl"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e66093ec42",
+      "name": "geturl",
+      "next": [
+        {
+          "condition": "temp.customUrl  !==null",
+          "conditionType": "props",
+          "node": "main.flow.json#Display-url"
+        },
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "getUrl {\"mappedValue\":\"{{event.payload.payload}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "fb0de5e05c",
+      "name": "captureEmail",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Confirmation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-EXaJCp"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"emailId\",\"value\":\"{{event.preview}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "957344401b",
+      "name": "Confirmation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "SendEmail-c1164b"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-EQQIi4"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-c1164b",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "SendEmail-c1164b",
+      "flow": "skills/SendEmail-c1164b.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": "choice-785a13"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "conditionType": "raw",
+          "node": "error.flow.json"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-785a13",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-785a13",
+      "flow": "skills/choice-785a13.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-nvdnmspech'] == \"yes\"",
+          "node": "choice-314af1"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-nvdnmspech'] == \"no\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-314af1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-314af1",
+      "flow": "skills/choice-314af1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-p8amgm06ra'] == \"Yes\"",
+          "conditionType": "raw",
+          "node": "main.flow.json#doc-perfect"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-p8amgm06ra'] == \"No\"",
+          "conditionType": "raw",
+          "node": "main.flow.json#UpdateDoc-Ticket"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "t6cgyezw55",
+    "contentId": "builtin_single-choice-GFRqoO",
+    "invalidContentId": "",
+    "keywords": {
+      "search": [
+        "search",
+        "How to search for a part or design"
+      ],
+      "edit": [
+        "edit",
+        "How to edit properties"
+      ],
+      "change": [
+        "change",
+        "How to change ownership"
+      ],
+      "check access": [
+        "check access",
+        "How to check for my access"
+      ],
+      "attach": [
+        "attach",
+        "How to attach a document"
+      ],
+      "view": [
+        "view",
+        "How to view attachments and linkages"
+      ],
+      "visualize": [
+        "visualize",
+        "How to visualize"
+      ],
+      "create": [
+        "create",
+        "How create a similar part"
+      ],
+      "revise": [
+        "revise",
+        "How to revise"
+      ],
+      "delete": [
+        "delete",
+        "How to delete"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-t6cgyezw55\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-t6cgyezw55\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-t6cgyezw55\",\"value\": null}",
+        "say #!builtin_single-choice-GFRqoO {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "528276"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"t6cgyezw55\",\"contentId\":\"builtin_single-choice-GFRqoO\",\"invalidContentId\":\"\",\"keywords\":{\"search\":[\"search\",\"How to search for a part or design\"],\"edit\":[\"edit\",\"How to edit properties\"],\"change\":[\"change\",\"How to change ownership\"],\"check access\":[\"check access\",\"How to check for my access\"],\"attach\":[\"attach\",\"How to attach a document\"],\"view\":[\"view\",\"How to view attachments and linkages\"],\"visualize\":[\"visualize\",\"How to visualize\"],\"create\":[\"create\",\"How create a similar part\"],\"revise\":[\"revise\",\"How to revise\"],\"delete\":[\"delete\",\"How to delete\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-t6cgyezw55'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "034306"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"t6cgyezw55\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-t6cgyezw55']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "655014"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "397119"
+    }
+  ]
+}

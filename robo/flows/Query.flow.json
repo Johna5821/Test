@@ -1,0 +1,136 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "Query-Start",
+  "description": "",
+  "nodes": [
+    {
+      "id": "0180b666f5",
+      "name": "Query-Start",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-c7133f"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-c7133f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-c7133f",
+      "flow": "skills/choice-c7133f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [workflow]",
+          "condition": "temp['skill-choice-ret-ykqkjt50hr'] == \"workflow\"",
+          "node": "choice-0f8606"
+        },
+        {
+          "caption": "User picked [part]",
+          "condition": "temp['skill-choice-ret-ykqkjt50hr'] == \"part\"",
+          "node": "Part.flow.json"
+        },
+        {
+          "caption": "User picked [security]",
+          "condition": "temp['skill-choice-ret-ykqkjt50hr'] == \"security\"",
+          "node": "Security.flow.json"
+        },
+        {
+          "caption": "User picked [process]",
+          "condition": "temp['skill-choice-ret-ykqkjt50hr'] == \"process\"",
+          "node": "Process.flow.json"
+        },
+        {
+          "caption": "User picked [Go Back]",
+          "condition": "temp['skill-choice-ret-ykqkjt50hr'] == \"Go Back\"",
+          "conditionType": "raw",
+          "node": "main.flow.json#MainMenu"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "main.flow.json#failure-msg"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-0f8606",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-0f8606",
+      "flow": "skills/choice-0f8606.flow.json",
+      "next": [
+        {
+          "caption": "User picked [submit]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"submit\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [approve]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"approve\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [demote]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"demote\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [delegate]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"delegate\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [complete]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"complete\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [view]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"view\"",
+          "node": "getsubmit-url"
+        },
+        {
+          "caption": "User picked [Go Back]",
+          "condition": "temp['skill-choice-ret-vnvwcrhcc5'] == \"Go Back\"",
+          "conditionType": "raw",
+          "node": "#choice-c7133f"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "main.flow.json#failure-msg"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f3db26edba",
+      "name": "getsubmit-url",
+      "next": [
+        {
+          "condition": "temp.customUrl     !==null",
+          "conditionType": "props",
+          "node": "main.flow.json#Display-url"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "main.flow.json#failure-msg"
+        }
+      ],
+      "onEnter": [
+        "getUrl {\"mappedValue\":\"{{event.payload.payload}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

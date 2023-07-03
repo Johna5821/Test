@@ -1,0 +1,13 @@
+{
+  "name": "license",
+  "utterances": {
+    "en": [
+      "Unable to login",
+      "Li﻿cense error"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

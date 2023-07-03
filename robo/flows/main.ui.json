@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "id": "entry",
+      "position": {
+        "x": -65,
+        "y": 50
+      }
+    },
+    {
+      "id": "skill-6de33e",
+      "position": {
+        "x": 270,
+        "y": 25
+      }
+    },
+    {
+      "id": "48be74c5d2",
+      "position": {
+        "x": -165,
+        "y": 255
+      }
+    },
+    {
+      "id": "cc62644393",
+      "position": {
+        "x": 120,
+        "y": 240
+      }
+    },
+    {
+      "id": "skill-3e94a2",
+      "position": {
+        "x": 385,
+        "y": 270
+      }
+    },
+    {
+      "id": "d1f2e54ee0",
+      "position": {
+        "x": 725,
+        "y": 70
+      }
+    },
+    {
+      "id": "cf9fbc816d",
+      "position": {
+        "x": 725,
+        "y": 210
+      }
+    },
+    {
+      "id": "f628a1b26b",
+      "position": {
+        "x": 725,
+        "y": 400
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "48be74c5d2",
+      "sourcePort": "out0",
+      "target": "cc62644393",
+      "points": [
+        {
+          "x": 35,
+          "y": 328
+        },
+        {
+          "x": 120,
+          "y": 257
+        }
+      ]
+    },
+    {
+      "source": "cc62644393",
+      "sourcePort": "out0",
+      "target": "skill-3e94a2",
+      "points": [
+        {
+          "x": 320,
+          "y": 363
+        },
+        {
+          "x": 385,
+          "y": 287
+        }
+      ]
+    },
+    {
+      "source": "entry",
+      "sourcePort": "out0",
+      "target": "skill-6de33e",
+      "points": [
+        {
+          "x": 135,
+          "y": 148
+        },
+        {
+          "x": 270,
+          "y": 42
+        }
+      ]
+    },
+    {
+      "source": "skill-3e94a2",
+      "sourcePort": "out1",
+      "target": "cf9fbc816d",
+      "points": [
+        {
+          "x": 585,
+          "y": 346
+        },
+        {
+          "x": 725,
+          "y": 227
+        }
+      ]
+    },
+    {
+      "source": "skill-3e94a2",
+      "sourcePort": "out0",
+      "target": "d1f2e54ee0",
+      "points": [
+        {
+          "x": 585,
+          "y": 314
+        },
+        {
+          "x": 725,
+          "y": 87
+        }
+      ]
+    },
+    {
+      "source": "skill-3e94a2",
+      "sourcePort": "out2",
+      "target": "f628a1b26b",
+      "points": [
+        {
+          "x": 585,
+          "y": 378
+        },
+        {
+          "x": 725,
+          "y": 417
+        }
+      ]
+    }
+  ]
+}

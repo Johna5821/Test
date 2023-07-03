@@ -1,0 +1,13 @@
+[
+  {
+    "id": "builtin_file-3G0bwt",
+    "formData": {
+      "typing$en": true,
+      "file$en": "{{temp.customUrl}}",
+      "title$en": "submit help doc"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-12T10:11:31.974Z",
+    "modifiedOn": "2022-10-12T10:19:48.434Z"
+  }
+]
